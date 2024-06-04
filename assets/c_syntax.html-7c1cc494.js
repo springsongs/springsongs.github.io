@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-30e347d6","path":"/C/c_syntax.html","title":"C 语法","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"C/c_syntax.md"}');export{t as data};

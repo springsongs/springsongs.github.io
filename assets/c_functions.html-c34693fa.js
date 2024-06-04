@@ -1,0 +1,32 @@
+import{_ as n,p as s,q as a,a1 as e}from"./framework-5866ffd3.js";const c={},t=e(`<h1 id="c-函数-functions" tabindex="-1"><a class="header-anchor" href="#c-函数-functions" aria-hidden="true">#</a> C 函数 Functions</h1><p>函数是一段代码，只有在被调用时才会运行。</p><p>您可以将数据（称为参数）传递给函数。</p><p>函数用于执行某些操作，它们对于重用代码很重要：定义代码一次，多次使用。</p><h2 id="预定义函数" tabindex="-1"><a class="header-anchor" href="#预定义函数" aria-hidden="true">#</a> 预定义函数</h2><p>所以事实证明你已经知道函数是什么了。 在学习本教程的过程中，您一直在使用它！</p><p>比如 <code>main()</code> 是一个函数，用来执行代码，<code>printf()</code>是一个函数； 用于向屏幕输出/打印文本：</p><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Hello World!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="创建函数" tabindex="-1"><a class="header-anchor" href="#创建函数" aria-hidden="true">#</a> 创建函数</h2><p>要创建（通常称为 <em>declare</em>）您自己的函数，请指定函数的名称，后跟括号 <code>()</code> 和大括号 <code>{}</code>：</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 要执行的代码</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>示例解释</strong></p><ul><li><code>myFunction()</code> 是函数的名称</li><li><code>void</code> 表示函数没有返回值。 您将在下一章稍后了解有关返回值的更多信息</li><li>在函数（主体）内部，添加定义函数应该做什么的代码</li></ul><h2 id="调用函数" tabindex="-1"><a class="header-anchor" href="#调用函数" aria-hidden="true">#</a> 调用函数</h2><p>声明的函数不会立即执行。 它们被“保存以备后用”，并在调用时执行。</p><p>要调用函数，请编写函数名，后跟两个括号 <code>()</code> 和一个分号 <code>;</code></p><p>在以下示例中，<code>myFunction()</code> 用于在调用时打印文本（操作）：</p><p>在 <code>main</code> 中，调用 <code>myFunction()</code>：</p><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code><span class="token comment">// 创建函数</span>
+<span class="token keyword">void</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;晚上好！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 调用函数</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 输出 -&gt; &quot;晚上好！&quot;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>一个函数可以被多次调用：</p><div class="language-c line-numbers-mode" data-ext="c"><pre class="language-c"><code><span class="token keyword">void</span> <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;晚上好！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">myFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 晚上好！</span>
+<span class="token comment">// 晚上好！</span>
+<span class="token comment">// 晚上好！</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,22),p=[t];function i(o,u){return s(),a("div",null,p)}const d=n(c,[["render",i],["__file","c_functions.html.vue"]]);export{d as default};
