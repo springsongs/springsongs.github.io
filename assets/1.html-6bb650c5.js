@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as s,R as e,t as c}from"./framework-5866ffd3.js";const r={},o=e("h1",{id:"初识mysql",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#初识mysql","aria-hidden":"true"},"#"),c(" 初识MySQL")],-1),_=[o];function n(d,l){return a(),s("div",null,_)}const h=t(r,[["render",n],["__file","1.html.vue"]]);export{h as default};
