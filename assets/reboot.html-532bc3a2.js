@@ -1,0 +1,9 @@
+import{_ as e,p as a,q as n,a1 as s}from"./framework-5866ffd3.js";const i={},d=s(`<h1 id="reboot" tabindex="-1"><a class="header-anchor" href="#reboot" aria-hidden="true">#</a> reboot</h1><p>重新启动正在运行的Linux操作系统</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>reboot命令</strong> 用来重新启动正在运行的Linux操作系统。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>reboot<span class="token punctuation">(</span>选项<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-d：重新开机时不把数据写入记录文件/var/tmp/wtmp。本参数具有“-n”参数效果；
+-f：强制重新开机，不调用shutdown指令的功能；
+-i：在重开机之前，先关闭所有网络界面；
+-n：重开机之前不检查是否有未结束的程序；
+-w：仅做测试，并不真正将系统重新开机，只会把重开机的数据写入/var/log目录下的wtmp记录文件。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">reboot</span>        //重开机。
+<span class="token function">reboot</span> <span class="token parameter variable">-w</span>     //做个重开机的模拟（只有纪录并不会真的重开机）。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,10),r=[d];function t(o,c){return a(),n("div",null,r)}const h=e(i,[["render",t],["__file","reboot.html.vue"]]);export{h as default};

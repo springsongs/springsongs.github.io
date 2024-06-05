@@ -1,0 +1,8 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const r={},t=n(`<h1 id="exportfs" tabindex="-1"><a class="header-anchor" href="#exportfs" aria-hidden="true">#</a> exportfs</h1><p>管理NFS共享文件系统列表</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p>exportfs 命令用来管理当前NFS共享的文件系统列表。</p><p>参数：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token parameter variable">-a</span> 打开或取消所有目录共享。
+<span class="token parameter variable">-o</span> options,<span class="token punctuation">..</span>.指定一列共享选项，与 exports<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> 中讲到的类似。
+<span class="token parameter variable">-i</span> 忽略 /etc/exports 文件，从而只使用默认的和命令行指定的选项。
+<span class="token parameter variable">-r</span> 重新共享所有目录。它使 /var/lib/nfs/xtab 和 /etc/exports 同步。 它将 /etc/exports 中已删除的条目从 /var/lib/nfs/xtab 中删除，将内核共享表中任何不再有效的条目移除。
+<span class="token parameter variable">-u</span> 取消一个或多个目录的共享。
+<span class="token parameter variable">-f</span> 在“新”模式下，刷新内核共享表之外的任何东西。 任何活动的客户程序将在它们的下次请求中得到 mountd添加的新的共享条目。
+<span class="token parameter variable">-v</span> 输出详细信息。当共享或者取消共享时，显示在做什么。 显示当前共享列表的时候，同时显示共享的选项。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6),i=[t];function p(l,c){return e(),s("div",null,i)}const d=a(r,[["render",p],["__file","exportfs.html.vue"]]);export{d as default};

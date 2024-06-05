@@ -1,0 +1,14 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},d=n(`<h1 id="fsck" tabindex="-1"><a class="header-anchor" href="#fsck" aria-hidden="true">#</a> fsck</h1><p>检查并且试图修复文件系统中的错误</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>fsck命令</strong> 被用于检查并且试图修复文件系统中的错误。当文件系统发生错误四化，可用fsck指令尝试加以修复。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>fsck<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-a：自动修复文件系统，不询问任何问题；
+-A：依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统；
+-N：不执行指令，仅列出实际执行会进行的动作；
+-P：当搭配<span class="token string">&quot;-A&quot;</span>参数使用时，则会同时检查所有的文件系统；
+-r：采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式；
+-R：当搭配<span class="token string">&quot;-A&quot;</span>参数使用时，则会略过/目录的文件系统不予检查；
+-s：依序执行检查作业，而非同时执行；
+-t<span class="token operator">&lt;</span>文件系统类型<span class="token operator">&gt;</span>：指定要检查的文件系统类型；
+-T：执行fsck指令时，不显示标题信息；
+-V：显示指令执行过程。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>文件系统：指定要查看信息的文件系统。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>linux的文件系统损坏会导致linux不正常关机，出错的时候如果系统告诉你是哪一块硬盘的分区有问题，比如是<code>/dev/hda2</code>，接着用如下的命令去对付它：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">fsck</span> <span class="token parameter variable">-y</span> /dev/hda2
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>结束后使用reboot命令重启系统这样就好了！</p><p>如果不知道时哪个地方出了问题，可以直接：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">fsck</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在随后的多个确认对话框中输入<code>:y</code></p><p>结束后同样使用reboot命令重启系统这样就好了！</p>`,18),c=[d];function r(l,t){return e(),s("div",null,c)}const u=a(i,[["render",r],["__file","fsck.html.vue"]]);export{u as default};

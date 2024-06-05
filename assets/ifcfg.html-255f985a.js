@@ -1,0 +1,6 @@
+import{_ as e,p as a,q as n,a1 as i}from"./framework-5866ffd3.js";const s={},d=i(`<h1 id="ifcfg" tabindex="-1"><a class="header-anchor" href="#ifcfg" aria-hidden="true">#</a> ifcfg</h1><p>置Linux中的网络接口参数</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>ifcfg命令</strong> 是一个Bash脚本程序，用来设置Linux中的网络接口参数。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ifcfg<span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>网络接口：指定要操作的网络接口；
+add/del：添加或删除网络接口上的地址；
+ip地址：指定IP地址和子网掩码；
+Stop：停用指定的网络接口的IP地址。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,8),r=[d];function c(t,l){return a(),n("div",null,r)}const o=e(s,[["render",c],["__file","ifcfg.html.vue"]]);export{o as default};

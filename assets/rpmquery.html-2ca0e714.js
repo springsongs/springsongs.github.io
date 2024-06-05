@@ -1,0 +1,9 @@
+import{_ as e,p as a,q as n,a1 as s}from"./framework-5866ffd3.js";const r={},i=s(`<h1 id="rpmquery" tabindex="-1"><a class="header-anchor" href="#rpmquery" aria-hidden="true">#</a> rpmquery</h1><p>从RPM数据库中查询软件包信息</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>rpmquery命令</strong> 使用多种依据从rpm数据库中查询软件包信息。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>rpmquery<span class="token punctuation">(</span>选项<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-qf：查询指定的文件所属的软件包；
+-q：查询指定的软件包是否被安装；
+-qc：查询软件包中的配置文件；
+-qd：查询软件包中的文档文件；
+-qi：查询软件包的基本信息。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>使用rpmquery命令查询指定文件所属的软件包：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># rpmquery -qf /usr/bin/htpasswd</span>
+httpd-2.2.3-81.el5.centos
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,11),d=[i];function c(t,l){return a(),n("div",null,d)}const h=e(r,[["render",c],["__file","rpmquery.html.vue"]]);export{h as default};

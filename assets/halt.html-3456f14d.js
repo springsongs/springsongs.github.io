@@ -1,0 +1,10 @@
+import{_ as a,p as e,q as n,a1 as s}from"./framework-5866ffd3.js";const i={},d=s(`<h1 id="halt" tabindex="-1"><a class="header-anchor" href="#halt" aria-hidden="true">#</a> halt</h1><p>关闭正在运行的Linux操作系统</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>halt命令</strong> 用来关闭正在运行的Linux操作系统。halt命令会先检测系统的runlevel，若runlevel为0或6，则关闭系统，否则即调用shutdown来关闭系统。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>halt<span class="token punctuation">(</span>选项<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-d：不要在wtmp中记录；
+-f：不论目前的runlevel为何，不调用shutdown即强制关闭系统；
+-i：在halt之前，关闭全部的网络界面；
+-n：halt前，不用先执行sync；
+-p：halt之后，执行poweroff；
+-w：仅在wtmp中记录，而不实际结束系统。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">halt</span> <span class="token parameter variable">-p</span>     <span class="token comment"># 关闭系统后关闭电源。</span>
+<span class="token function">halt</span> <span class="token parameter variable">-d</span>     <span class="token comment"># 关闭系统，但不留下纪录。</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,10),l=[d];function r(t,c){return e(),n("div",null,l)}const o=a(i,[["render",r],["__file","halt.html.vue"]]);export{o as default};

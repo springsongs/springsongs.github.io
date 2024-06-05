@@ -1,0 +1,26 @@
+import{_ as n,p as a,q as s,a1 as e}from"./framework-5866ffd3.js";const t={},i=e(`<h1 id="chfn" tabindex="-1"><a class="header-anchor" href="#chfn" aria-hidden="true">#</a> chfn</h1><p>用来改变finger命令显示的信息</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>chfn命令</strong> 用来改变finger命令显示的信息。这些信息都存放在/etc目录里的passwd文件里。若不指定任何选项，则chfn命令会进入问答式界面。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>chfn<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-f<span class="token operator">&lt;</span>真实姓名<span class="token operator">&gt;</span>或--full-name<span class="token operator">&lt;</span>真实姓名<span class="token operator">&gt;</span>：设置真实姓名；
+-h<span class="token operator">&lt;</span>家中电话<span class="token operator">&gt;</span>或--home-phone<span class="token operator">&lt;</span>家中电话<span class="token operator">&gt;</span>：设置家中的电话号码；
+-o<span class="token operator">&lt;</span>办公地址<span class="token operator">&gt;</span>或--office<span class="token operator">&lt;</span>办公地址<span class="token operator">&gt;</span>：设置办公室的地址；
+-p<span class="token operator">&lt;</span>办公电话<span class="token operator">&gt;</span>或--office-phone<span class="token operator">&lt;</span>办公电话<span class="token operator">&gt;</span>：设置办公室的电话号码；
+-u或--help：在线帮助；
+-v或-version：显示版本信息。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>用户名：指定要改变finger信息的用户名。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>范例1，改变finger信息：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token punctuation">[</span>root@localhost Desktop<span class="token punctuation">]</span><span class="token comment"># chfn</span>
+Changing finger information <span class="token keyword">for</span> root.
+Name <span class="token punctuation">[</span>root<span class="token punctuation">]</span>: jack
+Office <span class="token punctuation">[</span><span class="token punctuation">]</span>: hn
+Office Phone <span class="token punctuation">[</span><span class="token punctuation">]</span>: <span class="token number">888888</span>
+Home Phone <span class="token punctuation">[</span><span class="token punctuation">]</span>: <span class="token number">9999999</span>
+
+Finger information changed.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>范例2，改变账号真实姓名：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token punctuation">[</span>root@localhost Desktop<span class="token punctuation">]</span><span class="token comment"># chfn -f jack</span>
+Changing finger information <span class="token keyword">for</span> root.
+Finger information changed.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>范例3：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>shell<span class="token operator">&gt;&gt;</span> chfn
+Changing finger information <span class="token keyword">for</span> user
+Password: <span class="token punctuation">[</span>del<span class="token punctuation">]</span>
+Name<span class="token punctuation">[</span><span class="token punctuation">]</span>:linuxde <span class="token comment">### 提供 finger 时的资料</span>
+Office<span class="token punctuation">[</span><span class="token punctuation">]</span>:NCCU
+Office Phone<span class="token punctuation">[</span><span class="token punctuation">]</span>: <span class="token punctuation">[</span>del<span class="token punctuation">]</span>
+Home Phone<span class="token punctuation">[</span><span class="token punctuation">]</span>: <span class="token punctuation">[</span>del<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,17),o=[i];function p(c,l){return a(),s("div",null,o)}const d=n(t,[["render",p],["__file","chfn.html.vue"]]);export{d as default};

@@ -1,0 +1,11 @@
+import{_ as e,p as a,q as n,a1 as i}from"./framework-5866ffd3.js";const s={},d=i(`<h1 id="dpkg-reconfigure" tabindex="-1"><a class="header-anchor" href="#dpkg-reconfigure" aria-hidden="true">#</a> dpkg-reconfigure</h1><p>Debian Linux中重新配制一个已经安装的软件包</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>dpkg-reconfigure命令</strong> 是Debian Linux中重新配置已经安装过的软件包，可以将一个或者多个已安装的软件包传递给此指令，它将询问软件初次安装后的配置问题。</p><p>当用户需要再次对软件包配置的时候，可以使用dpkg-reconfigure命令来对指定的软件包进行配置。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-reconfigure<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-a：重新配置所有的软件包；
+-u或--unseen-only：仅显示未提过的问题；
+--default-priority：使用默认优先级，而非“低”级；
+--force：强制执行操作，需谨慎使用此选项；
+--no-reload：不要轻易的重装模板（使用时请慎重考虑）；
+-f或--frontend：指定 debconf 前端界面；
+-p或--priority：指定要显示的问题的最优先级；
+--terse：开启简要模式。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>软件包名：需要重新配置的已安装的软件包。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>用于配置语言：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">sudo</span> dpkg-reconfigure locales
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,14),r=[d];function c(l,t){return a(),n("div",null,r)}const u=e(s,[["render",c],["__file","dpkg-reconfigure.html.vue"]]);export{u as default};

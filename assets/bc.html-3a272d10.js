@@ -1,0 +1,24 @@
+import{_ as a,p as s,q as n,a1 as e}from"./framework-5866ffd3.js";const i={},c=e(`<h1 id="bc" tabindex="-1"><a class="header-anchor" href="#bc" aria-hidden="true">#</a> bc</h1><p>算术操作精密运算工具</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>bc命令</strong> 是一种支持任意精度的交互执行的计算器语言。bash内置了对整数四则运算的支持，但是并不支持浮点运算，而bc命令可以很方便的进行浮点运算，当然整数运算也不再话下。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>bc<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-i：强制进入交互式模式；
+-l：定义使用的标准数学库；
+-w：对POSIX bc的扩展给出警告信息；
+-q：不打印正常的GNU bc环境信息；
+-v：显示指令版本信息；
+-h：显示指令的帮助信息。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>文件：指定包含计算任务的文件。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>算术操作高级运算bc命令它可以执行浮点运算和一些高级函数：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;1.212*3&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span> 
+<span class="token number">3.636</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>设定小数精度（数值范围）</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;scale=2;3/8&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span>
+<span class="token number">0.37</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>参数<code>scale=2</code>是将bc输出结果的小数位设置为2位。</p><p>进制转换</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token assign-left variable">abc</span><span class="token operator">=</span><span class="token number">192</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;obase=2;<span class="token variable">$abc</span>&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>执行结果为：11000000，这是用bc将十进制转换成二进制。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+<span class="token assign-left variable">abc</span><span class="token operator">=</span><span class="token number">11000000</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;obase=10;ibase=2;<span class="token variable">$abc</span>&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>执行结果为：192，这是用bc将二进制转换为十进制。</p><p>计算平方和平方根：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> <span class="token string">&quot;10^10&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;sqrt(100)&quot;</span> <span class="token operator">|</span> <span class="token function">bc</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div>`,23),l=[c];function d(t,r){return s(),n("div",null,l)}const p=a(i,[["render",d],["__file","bc.html.vue"]]);export{p as default};

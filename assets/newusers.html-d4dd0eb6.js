@@ -1,0 +1,14 @@
+import{_ as n,p as e,q as s,a1 as a}from"./framework-5866ffd3.js";const i={},d=a(`<h1 id="newusers" tabindex="-1"><a class="header-anchor" href="#newusers" aria-hidden="true">#</a> newusers</h1><p>用于批处理的方式一次创建多个命令</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>newusers命令</strong> 用于批处理的方式一次创建多个命令。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>newusers<span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>用户文件：指定包含用户信息的文本文件，文件的格式要与<code>/etc/passwd</code>相同。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>实用newusers命令批量添加用户：</p><p>用法很简单，newusers后面直接跟一个文件，文件格式和<code>/etc/passwd</code>的格式相同。</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>用户名1:x:<span class="token environment constant">UID</span>:GID:用户说明:用户的家目录:所用<span class="token environment constant">SHELL</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>举例：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>jingang0:x:520:520::/home/jingang0:/sbin/nologin
+jingang1:x:521:521::/home/jingang1:/sbin/nologin
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>值得一提的是关于SHELL类型，查看主机上所有SHELL，可以通过chsh来查看：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token punctuation">[</span>root@localhost beinan<span class="token punctuation">]</span><span class="token comment"># chsh --list</span>
+/bin/sh
+/bin/bash
+/sbin/nologin
+/bin/ksh
+/bin/tcsh
+/bin/csh
+/bin/zsh
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>其中除了<code>/sbin/nologin</code>，其它类型的SHELL都能登录系统，nologin大多是虚拟用户用的SHELL，也就是说虽然他是系统用户，但他并无登录系统的权限；如果您想添加这类用户，就把他的SHELL设置成<code>/sbin/nologin</code>，比如上面的例子。</p><p>关于用户名、UID、GID及用户的家目录是怎么回事，您可以读相应的参考文档。</p>`,18),c=[d];function r(l,o){return e(),s("div",null,c)}const u=n(i,[["render",r],["__file","newusers.html.vue"]]);export{u as default};

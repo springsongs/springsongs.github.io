@@ -1,0 +1,29 @@
+import{_ as s,M as e,p as i,q as t,R as a,t as l,N as c,a1 as o}from"./framework-5866ffd3.js";const r={},d=o(`<h1 id="cat" tabindex="-1"><a class="header-anchor" href="#cat" aria-hidden="true">#</a> cat</h1><p>连接多个文件并打印到标准输出。</p><h2 id="概要" tabindex="-1"><a class="header-anchor" href="#概要" aria-hidden="true">#</a> 概要</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> <span class="token punctuation">[</span>OPTION<span class="token punctuation">]</span><span class="token punctuation">..</span>. <span class="token punctuation">[</span>FILE<span class="token punctuation">]</span><span class="token punctuation">..</span>.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="主要用途" tabindex="-1"><a class="header-anchor" href="#主要用途" aria-hidden="true">#</a> 主要用途</h2><ul><li>显示文件内容，如果没有文件或文件为<code>-</code>则读取标准输入。</li><li>将多个文件的内容进行连接并打印到标准输出。</li><li>显示文件内容中的不可见字符（控制字符、换行符、制表符等）。</li></ul><h2 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h2><p>FILE（可选）：要处理的文件，可以为一或多个。</p><h2 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>长选项与短选项等价
+
+-A, --show-all           等价于<span class="token string">&quot;-vET&quot;</span>组合选项。
+-b, --number-nonblank    只对非空行编号，从1开始编号，覆盖<span class="token string">&quot;-n&quot;</span>选项。
+<span class="token parameter variable">-e</span>                       等价于<span class="token string">&quot;-vE&quot;</span>组合选项。
+-E, --show-ends          在每行的结尾显示<span class="token string">&#39;$&#39;</span>字符。
+-n, <span class="token parameter variable">--number</span>             对所有行编号，从1开始编号。
+-s, --squeeze-blank      压缩连续的空行到一行。
+<span class="token parameter variable">-t</span>                       等价于<span class="token string">&quot;-vT&quot;</span>组合选项。
+-T, --show-tabs          使用<span class="token string">&quot;^I&quot;</span>表示TAB（制表符）。
+<span class="token parameter variable">-u</span>                       POSIX兼容性选项，无意义。
+-v, --show-nonprinting   使用<span class="token string">&quot;^&quot;</span>和<span class="token string">&quot;M-&quot;</span>符号显示控制字符，除了LFD（line feed，即换行符<span class="token string">&#39;\\n&#39;</span>）和TAB（制表符）。
+
+<span class="token parameter variable">--help</span>                   显示帮助信息并退出。
+<span class="token parameter variable">--version</span>                显示版本信息并退出。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="返回值" tabindex="-1"><a class="header-anchor" href="#返回值" aria-hidden="true">#</a> 返回值</h2><p>返回状态为成功除非给出了非法选项或非法参数。</p><h2 id="例子" tabindex="-1"><a class="header-anchor" href="#例子" aria-hidden="true">#</a> 例子</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token comment"># 合并显示多个文件</span>
+<span class="token function">cat</span> ./1.log ./2.log ./3.log
+<span class="token comment"># 显示文件中的非打印字符、tab、换行符</span>
+<span class="token function">cat</span> <span class="token parameter variable">-A</span> test.log
+<span class="token comment"># 压缩文件的空行</span>
+<span class="token function">cat</span> <span class="token parameter variable">-s</span> test.log
+<span class="token comment"># 显示文件并在所有行开头附加行号</span>
+<span class="token function">cat</span> <span class="token parameter variable">-n</span> test.log
+<span class="token comment"># 显示文件并在所有非空行开头附加行号</span>
+<span class="token function">cat</span> <span class="token parameter variable">-b</span> test.log
+<span class="token comment"># 将标准输入的内容和文件内容一并显示</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&#39;######&#39;</span> <span class="token operator">|</span><span class="token function">cat</span> - test.log
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="注意" tabindex="-1"><a class="header-anchor" href="#注意" aria-hidden="true">#</a> 注意</h3><ol><li>该命令是<code>GNU coreutils</code>包中的命令，相关的帮助信息请查看<code>man -s 1 cat</code>或<code>info coreutils &#39;cat invocation&#39;</code>。</li><li>当使用<code>cat</code>命令查看<strong>体积较大的文件</strong>时，文本在屏幕上迅速闪过（滚屏），用户往往看不清所显示的内容，为了控制滚屏，可以按<code>Ctrl+s</code>键停止滚屏；按<code>Ctrl+q</code>键恢复滚屏；按<code>Ctrl+c</code>（中断）键可以终止该命令的执行，返回Shell提示符状态。</li><li>建议您查看<strong>体积较大的文件</strong>时使用<code>less</code>、<code>more</code>命令或<code>emacs</code>、<code>vi</code>等文本编辑器。</li></ol><h3 id="参考链接" tabindex="-1"><a class="header-anchor" href="#参考链接" aria-hidden="true">#</a> 参考链接</h3>`,17),p={href:"https://superuser.com/questions/328054/is-there-an-lfd-key-on-my-keyboard",target:"_blank",rel:"noopener noreferrer"};function u(v,h){const n=e("ExternalLinkIcon");return i(),t("div",null,[d,a("ol",null,[a("li",null,[a("a",p,[l("Question about LFD key"),c(n)])])])])}const b=s(r,[["render",u],["__file","cat.html.vue"]]);export{b as default};

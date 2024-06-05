@@ -1,0 +1,8 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},d=n(`<h1 id="cupsdisable" tabindex="-1"><a class="header-anchor" href="#cupsdisable" aria-hidden="true">#</a> cupsdisable</h1><p>停止指定的打印机</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>cupsdisable命令</strong> 用于停止指定的打印机。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>cupsdisable<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-E：当连接到服务器时强制使用加密；
+-U：指定连接服务器时使用的用户名；
+-u：指定打印任务所属的用户；
+-c：取消指定打印机的所有打印任务；
+-h：指定连接的服务器名和端口号；
+-r：停止打印机的原因。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>目标：指定目标打印机。</p>`,10),c=[d];function r(l,t){return e(),s("div",null,c)}const u=a(i,[["render",r],["__file","cupsdisable.html.vue"]]);export{u as default};

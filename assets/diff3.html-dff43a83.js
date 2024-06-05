@@ -1,0 +1,9 @@
+import{_ as e,p as a,q as n,a1 as i}from"./framework-5866ffd3.js";const s={},d=i(`<h1 id="diff3" tabindex="-1"><a class="header-anchor" href="#diff3" aria-hidden="true">#</a> diff3</h1><p>比较3个文件不同的地方</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>diff3命令</strong> 用于比较3个文件，将3个文件的不同的地方显示到标准输出。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>diff3<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-a：把所有的文件都当做文本文件按照行为单位进行比较，即给定的文件不是文本文件；
+-A：合并第2个文件和第3个文件之间的不同到第1个文件中，有冲突内容用括号括起来；
+-B：与选项“-A”功能相同，但是不显示冲突的内容；
+-e/--ed：生成一个“-ed”脚本，用于将第2个文件和第3个文件之间的不同合并到第1个文件中；
+--easy-only：除了不显示互相重叠的变化，与选项“-e”的功能相同；
+-i：为了和system V系统兼容，在“ed”脚本的最后生成“w”和“q”命令。此选项必须和选项“-AeExX3”连用，但是不能和“-m”连用；
+--initial-tab：在正常格式的行的文本前，输出一个TAB字符而非两个空白字符。此选项将导致在行中TAB字符的对齐方式看上去规范。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><ul><li>文件1：指定要比较的第1个文件；</li><li>文件2：指定要比较的第2个文件；</li><li>文件3：指定要比较的第3个文件。</li></ul>`,10),r=[d];function l(t,c){return a(),n("div",null,r)}const u=e(s,[["render",l],["__file","diff3.html.vue"]]);export{u as default};

@@ -1,0 +1,20 @@
+import{_ as s,p as n,q as e,a1 as a}from"./framework-5866ffd3.js";const i={},l=a(`<h1 id="cmp" tabindex="-1"><a class="header-anchor" href="#cmp" aria-hidden="true">#</a> cmp</h1><p>比较两个文件是否有差异</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>cmp命令</strong> 用来比较两个文件是否有差异。当相互比较的两个文件完全一样时，则该指令不会显示任何信息。若发现有差异，预设会标示出第一个不通之处的字符和列数编号。若不指定任何文件名称或是所给予的文件名为“-”，则cmp指令会从标准输入设备读取数据。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>cmp<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-c或--print-chars：除了标明差异处的十进制字码之外，一并显示该字符所对应字符；
+-i<span class="token operator">&lt;</span>字符数目<span class="token operator">&gt;</span>或--ignore-initial<span class="token operator">=</span><span class="token operator">&lt;</span>字符数目<span class="token operator">&gt;</span>：指定一个数目；
+-l或——verbose：标示出所有不一样的地方；
+-s或--quiet或——silent：不显示错误信息；
+-v或——version：显示版本信息；
+--help：在线帮助。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>目录：比较两个文件的差异。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>使用cmp命令比较文件&quot;testfile&quot;和文件&quot;testfile1&quot;两个文件，则输入下面的命令：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cmp</span> testfile testfile1            <span class="token comment">#比较两个指定的文件</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>在上述指令执行之前，使用cat命令查看两个指定的文件内容，如下所示：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cat</span> testfile                    <span class="token comment">#查看文件内容  </span>
+Absncn <span class="token number">50</span>                       <span class="token comment">#显示文件“testfile”  </span>
+Asldssja <span class="token number">60</span>  
+Jslkadjls <span class="token number">85</span> 
+
+<span class="token function">cat</span> testfile1                   <span class="token comment">#查看文件内容  </span>
+Absncn <span class="token number">50</span>                       <span class="token comment">#显示文件“testfile1”  </span>
+AsldssjE <span class="token number">62</span>  
+Jslkadjls <span class="token number">85</span>  
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后，再执行cmp命令，并返回比较结果，具体如下所示：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">cmp</span> testfile testfile1       <span class="token comment">#比较两个文件  </span>
+testfile testfile1           <span class="token comment">#有差异：第8字节，第2行  </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>注意：在比较结果中，只能够显示第一比较结果。</p>`,18),t=[l];function c(d,r){return n(),e("div",null,t)}const o=s(i,[["render",c],["__file","cmp.html.vue"]]);export{o as default};

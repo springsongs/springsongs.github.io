@@ -1,0 +1,8 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},l=n(`<h1 id="lpc" tabindex="-1"><a class="header-anchor" href="#lpc" aria-hidden="true">#</a> lpc</h1><p>命令行方式打印机控制程序</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>lpc命令</strong> 式命令行方式打印机控制程序，有5个内置命令。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">lpc</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># lpc</span>
+lpc<span class="token operator">&gt;</span> ?         
+命令可能是缩写。命令是：
+
+<span class="token builtin class-name">exit</span>    <span class="token builtin class-name">help</span>    quit    status  ?
+lpc<span class="token operator">&gt;</span> <span class="token builtin class-name">exit</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,8),c=[l];function t(d,r){return e(),s("div",null,c)}const p=a(i,[["render",t],["__file","lpc.html.vue"]]);export{p as default};

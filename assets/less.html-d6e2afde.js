@@ -1,0 +1,11 @@
+import{_ as e,p as a,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},d=n(`<h1 id="less" tabindex="-1"><a class="header-anchor" href="#less" aria-hidden="true">#</a> less</h1><p>分屏上下翻页浏览文件内容</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>less命令</strong> 的作用与more十分相似，都可以用来浏览文字档案的内容，不同的是less命令允许用户向前或向后浏览文件，而more命令只能向前浏览。用less命令显示文件时，用PageUp键向上翻页，用PageDown键向下翻页。要退出less程序，应按Q键。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>less<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-e：文件内容显示完毕后，自动退出；
+-f：强制显示文件；
+-g：不加亮显示搜索到的所有关键词，仅显示当前显示的关键字，以提高显示速度；
+-l：搜索时忽略大小写的差异；
+-N：每一行行首显示行号；
+-s：将连续多个空行压缩成一行显示；
+-S：在单行显示较长的内容，而不换行显示；
+-x<span class="token operator">&lt;</span>数字<span class="token operator">&gt;</span>：将TAB字符显示为指定个数的空格字符。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>文件：指定要分屏显示内容的文件。</p><h2 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">sudo</span> <span class="token function">less</span> /var/log/shadowsocks.log
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,12),l=[d];function r(c,t){return a(),s("div",null,l)}const h=e(i,[["render",r],["__file","less.html.vue"]]);export{h as default};

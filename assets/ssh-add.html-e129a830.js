@@ -1,0 +1,16 @@
+import{_ as a,p as s,q as e,a1 as n}from"./framework-5866ffd3.js";const d={},i=n(`<h1 id="ssh-add" tabindex="-1"><a class="header-anchor" href="#ssh-add" aria-hidden="true">#</a> ssh-add</h1><p>把专用密钥添加到ssh-agent的高速缓存中</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>ssh-add命令</strong> 是把专用密钥添加到ssh-agent的高速缓存中。该命令位置在<code>/usr/bin/ssh-add</code>。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ssh-add <span class="token punctuation">[</span>-cDdLlXx<span class="token punctuation">]</span> <span class="token punctuation">[</span>-t life<span class="token punctuation">]</span> <span class="token punctuation">[</span>file <span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+ssh-add <span class="token parameter variable">-s</span> pkcs11
+ssh-add <span class="token parameter variable">-e</span> pkcs11
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-D：删除ssh-agent中的所有密钥.
+-d：从ssh-agent中的删除密钥
+<span class="token parameter variable">-e</span> pkcs11：删除PKCS<span class="token comment">#11共享库pkcs1提供的钥匙。</span>
+<span class="token parameter variable">-s</span> pkcs11：添加PKCS<span class="token comment">#11共享库pkcs1提供的钥匙。</span>
+-L：显示ssh-agent中的公钥
+-l：显示ssh-agent中的密钥
+<span class="token parameter variable">-t</span> life：对加载的密钥设置超时时间，超时ssh-agent将自动卸载密钥
+-X：对ssh-agent进行解锁
+-x：对ssh-agent进行加锁
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>1、把专用密钥添加到 ssh-agent 的高速缓存中：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ssh-add ~/.ssh/id_dsa
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2、从ssh-agent中删除密钥：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ssh-add <span class="token parameter variable">-d</span> ~/.ssh/id_xxx.pub
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3、查看ssh-agent中的密钥：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>ssh-add <span class="token parameter variable">-l</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,15),l=[i];function r(c,t){return s(),e("div",null,l)}const p=a(d,[["render",r],["__file","ssh-add.html.vue"]]);export{p as default};

@@ -1,0 +1,8 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},d=n(`<h1 id="mailstat" tabindex="-1"><a class="header-anchor" href="#mailstat" aria-hidden="true">#</a> mailstat</h1><p>显示到达的邮件状态</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>mailstat命令</strong> 用来显示到达的邮件状态。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>mailstat<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-k：保持邮件日志文件的完整性，不清空日志文件；
+-l：使用长格式显示邮件状态；
+-m：合并任何错误信息到一行中显示；
+-o：使用老的邮件日志邮件；
+-t：使用简洁的格式显示邮件状态；
+-s：如果没有邮件则不输出任何信息。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>邮件日志文件：指定要读取邮件日志文件。</p>`,10),t=[d];function r(l,c){return e(),s("div",null,t)}const o=a(i,[["render",r],["__file","mailstat.html.vue"]]);export{o as default};

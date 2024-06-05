@@ -1,0 +1,15 @@
+import{_ as a,p as n,q as s,a1 as e}from"./framework-5866ffd3.js";const i={},r=e(`<h1 id="w" tabindex="-1"><a class="header-anchor" href="#w" aria-hidden="true">#</a> w</h1><p>显示目前登入系统的用户信息</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>w命令</strong> 用于显示已经登陆系统的用户列表，并显示用户正在执行的指令。执行这个命令可得知目前登入系统的用户有那些人，以及他们正在执行的程序。单独执行w命令会显示所有的用户，您也可指定用户名称，仅显示某位用户的相关信息。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>w<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code> -h, --no-header     不打印头信息；
+ -u, --no-current    当显示当前进程和cpu时间时忽略用户名；
+ -s, <span class="token parameter variable">--short</span>         使用短输出格式；
+ -f, <span class="token parameter variable">--from</span>          显示用户从哪登录；
+ -o, --old-style     老式输出
+ -i, --ip-addr       显示IP地址而不是主机名（如果可能）
+
+     <span class="token parameter variable">--help</span>     显示此帮助并退出
+ -V, <span class="token parameter variable">--version</span>  显示版本信息。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>用户：仅显示指定用户。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>w
+ <span class="token number">20</span>:39:37 up <span class="token number">136</span> days,  <span class="token number">3</span>:58,  <span class="token number">1</span> user,  load average: <span class="token number">0.00</span>, <span class="token number">0.00</span>, <span class="token number">0.00</span>
+<span class="token environment constant">USER</span>     TTY      FROM              login@   IDLE   JCPU   PCPU WHAT
+root     pts/0    <span class="token number">222.94</span>.97.122    <span class="token number">20</span>:39    <span class="token number">1</span>.00s  <span class="token number">0</span>.00s  <span class="token number">0</span>.00s w
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,12),d=[r];function l(c,t){return n(),s("div",null,d)}const o=a(i,[["render",l],["__file","w.html.vue"]]);export{o as default};

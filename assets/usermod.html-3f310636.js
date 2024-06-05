@@ -1,0 +1,27 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const r={},d=n(`<h1 id="usermod" tabindex="-1"><a class="header-anchor" href="#usermod" aria-hidden="true">#</a> usermod</h1><p>用于修改用户的基本信息</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>usermod命令</strong> 用于修改用户的基本信息。usermod 命令不允许你改变正在线上的使用者帐号名称。当 usermod 命令用来改变user id，必须确认这名user没在电脑上执行任何程序。你需手动更改使用者的 crontab 档。也需手动更改使用者的 at 工作档。采用 NIS server 须在server上更动相关的NIS设定。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>usermod<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-c<span class="token operator">&lt;</span>备注<span class="token operator">&gt;</span>：修改用户帐号的备注文字；
+-d<span class="token operator">&lt;</span>登入目录<span class="token operator">&gt;</span>：修改用户登入时的目录，只是修改/etc/passwd中用户的家目录配置信息，不会自动创建新的家目录，通常和-m一起使用；
+-m<span class="token operator">&lt;</span>移动用户家目录<span class="token operator">&gt;</span>:移动用户家目录到新的位置，不能单独使用，一般与-d一起使用。
+-e<span class="token operator">&lt;</span>有效期限<span class="token operator">&gt;</span>：修改帐号的有效期限；
+-f<span class="token operator">&lt;</span>缓冲天数<span class="token operator">&gt;</span>：修改在密码过期后多少天即关闭该帐号；
+-g<span class="token operator">&lt;</span>群组<span class="token operator">&gt;</span>：修改用户所属的群组；
+-G<span class="token operator">&lt;</span>群组<span class="token operator">&gt;</span>；修改用户所属的附加群组；
+-l<span class="token operator">&lt;</span>帐号名称<span class="token operator">&gt;</span>：修改用户帐号名称；
+-L：锁定用户密码，使密码无效；
+-s<span class="token operator">&lt;</span>shell<span class="token operator">&gt;</span>：修改用户登入后所使用的shell；
+-u<span class="token operator">&lt;</span>uid<span class="token operator">&gt;</span>：修改用户ID；
+-U:解除密码锁定。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>登录名：指定要修改信息的用户登录名。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>将 newuser2 添加到组 staff 中：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">usermod</span> <span class="token parameter variable">-G</span> staff newuser2
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>修改newuser的用户名为newuser1：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">usermod</span> <span class="token parameter variable">-l</span> newuser1 newuser
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>锁定账号newuser1：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">usermod</span> <span class="token parameter variable">-L</span> newuser1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>解除对newuser1的锁定：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">usermod</span> <span class="token parameter variable">-U</span> newuser1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>增加用户到用户组中:</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>apk <span class="token function">add</span> shadow <span class="token comment"># 安装 shadow 包, usermod 命令包含在 usermod 中</span>
+<span class="token function">usermod</span> <span class="token parameter variable">-aG</span> group user <span class="token comment"># 添加用户到用户组中</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><code>-a</code> 参数表示附加，只和 <code>-G</code> 参数一同使用，表示将用户增加到组中。</p><p>修改用户家目录：</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>[root@node-1 ~]# useradd lutixiaya
+[root@node-1 ~]# ls /home
+lutixiaya
+[root@node-1 ~]# usermod -md /data/new_home lutixiaya
+[root@node-1 ~]# ls /home/
+[root@node-1 ~]# ls /data/
+new_home
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,24),i=[d];function l(o,t){return e(),s("div",null,i)}const p=a(r,[["render",l],["__file","usermod.html.vue"]]);export{p as default};

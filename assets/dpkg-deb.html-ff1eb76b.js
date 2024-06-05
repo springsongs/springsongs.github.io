@@ -1,0 +1,15 @@
+import{_ as e,p as a,q as d,a1 as n}from"./framework-5866ffd3.js";const s={},i=n(`<h1 id="dpkg-deb" tabindex="-1"><a class="header-anchor" href="#dpkg-deb" aria-hidden="true">#</a> dpkg-deb</h1><p>Debian Linux下的软件包管理工具</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p><strong>dpkg-deb命令</strong> 是Debian Linux下的软件包管理工具，它可以对软件包执行打包和解包操作以及提供软件包信息。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-deb<span class="token punctuation">(</span>选项<span class="token punctuation">)</span><span class="token punctuation">(</span>参数<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>-c：显示软件包中的文件列表；
+-e：将主控信息解压；
+-f：把字段内容打印到标准输出；
+-x：将软件包中的文件释放到指定目录下；
+-X：将软件包中的文件释放到指定目录下，并显示释放文件的详细过程；
+-w：显示软件包的信息；
+-l：显示软件包的详细信息；
+-R：提取控制信息和存档的清单文件；
+-b：创建debian软件包。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="参数" tabindex="-1"><a class="header-anchor" href="#参数" aria-hidden="true">#</a> 参数</h3><p>文件：指定要操作的“.deb”软件包的全名或软件名。</p><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>解压程序文件：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-deb <span class="token parameter variable">-x</span> drcom-pum_1.0-0ubuntu1~ppa1~jaunty1_i386.deb drcom
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>解压控制文件：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-deb <span class="token parameter variable">-e</span> drcom-pum_1.0-0ubuntu1~ppa1~jaunty1_i386.deb drcom/DEBIAN
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>打包生成deb文件：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-deb <span class="token parameter variable">-b</span> drcom drcom_1.4.8.2_i386.deb
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查询deb包中的文件内容：</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>dpkg-deb <span class="token parameter variable">-c</span> demo.deb
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,19),r=[i];function l(c,t){return a(),d("div",null,r)}const b=e(s,[["render",l],["__file","dpkg-deb.html.vue"]]);export{b as default};

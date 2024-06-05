@@ -1,0 +1,17 @@
+import{_ as a,p as e,q as s,a1 as n}from"./framework-5866ffd3.js";const i={},t=n(`<h1 id="hostnamectl" tabindex="-1"><a class="header-anchor" href="#hostnamectl" aria-hidden="true">#</a> hostnamectl</h1><p>查询或更改系统主机名</p><h2 id="补充说明" tabindex="-1"><a class="header-anchor" href="#补充说明" aria-hidden="true">#</a> 补充说明</h2><p>hostnamectl可用于查询和更改系统主机名和相关设置。</p><h3 id="语法" tabindex="-1"><a class="header-anchor" href="#语法" aria-hidden="true">#</a> 语法</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>hostnamectl <span class="token punctuation">[</span>选项<span class="token punctuation">..</span>.<span class="token punctuation">]</span> 指令 <span class="token punctuation">..</span>.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="指令" tabindex="-1"><a class="header-anchor" href="#指令" aria-hidden="true">#</a> 指令</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>status                 显示当前主机名设置
+set-hostname NAME      设置系统主机名
+set-icon-name NAME     设置主机的图标名称
+set-chassis NAME       设置主机的机箱类型 
+set-deployment NAME    设置主机的部署环境 
+set-location NAME      设置主机位置
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h3><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token parameter variable">-h</span> <span class="token parameter variable">--help</span>               显示此帮助
+    <span class="token parameter variable">--version</span>           显示包的版本
+    --no-ask-password   不提示输入密码
+<span class="token parameter variable">-H</span> <span class="token parameter variable">--host</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token environment constant">USER</span>@<span class="token punctuation">]</span>HOST   在远程主机上操作
+<span class="token parameter variable">-M</span> <span class="token parameter variable">--machine</span><span class="token operator">=</span>CONTAINER  在本地容器上执行操作。指定要连接到的容器名称。
+--transient, --static, <span class="token parameter variable">--pretty</span>  
+                        如果调用了status（或者没有给出显式命令）并且指定了其中一个开关，hostnamectl将只打印出这个选定的主机名。
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="实例" tabindex="-1"><a class="header-anchor" href="#实例" aria-hidden="true">#</a> 实例</h3><p>显示主机名设置</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ hostnamectl status
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>改变主机名(永久修改,不用重启哦~)</p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>$ <span class="token function">sudo</span> hostnamectl set-hostname newname
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>`,15),d=[t];function l(r,c){return e(),s("div",null,d)}const p=a(i,[["render",l],["__file","hostnamectl.html.vue"]]);export{p as default};
