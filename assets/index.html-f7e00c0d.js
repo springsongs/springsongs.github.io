@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-6ba0d502","path":"/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/","title":"计算机图形学","lang":"en-US","frontmatter":{"title":"计算机图形学"},"headers":[],"git":{"updatedTime":1683427831000,"contributors":[{"name":"jackchen","email":"jackchen32795@icloud.com","commits":3}]},"filePathRelative":"计算机图形学/README.md"}');export{e as data};
