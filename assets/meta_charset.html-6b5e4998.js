@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6c08ba88","path":"/Html/tags/meta_charset.html","title":"meta_charset.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/meta_charset.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-fd4573da","path":"/Html/attribute/ondragleave.html","title":"ondragleave.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/ondragleave.md"}');export{t as data};

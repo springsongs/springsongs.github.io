@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-051fd39e","path":"/Html/attribute/onhashchange.html","title":"onhashchange.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onhashchange.md"}');export{t as data};

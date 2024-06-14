@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-69b0c764","path":"/Html/tags/link_referrerpolicy.html","title":"link_referrerpolicy.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/link_referrerpolicy.md"}');export{e as data};

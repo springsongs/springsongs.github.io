@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-643e3b62","path":"/Html/tags/ins_datetime.html","title":"ins_datetime.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/ins_datetime.md"}');export{t as data};

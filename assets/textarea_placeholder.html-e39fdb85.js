@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-545a3c60","path":"/Html/tags/textarea_placeholder.html","title":"textarea_placeholder.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/textarea_placeholder.md"}');export{t as data};

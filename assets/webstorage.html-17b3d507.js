@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-76ea594c","path":"/Html/tutorial/webstorage.html","title":"webstorage.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/webstorage.md"}');export{t as data};

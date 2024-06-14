@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7287ffd1","path":"/Html/attribute/span.html","title":"span.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/span.md"}');export{t as data};

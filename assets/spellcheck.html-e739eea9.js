@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-55d91e7b","path":"/Html/attribute/spellcheck.html","title":"spellcheck.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/spellcheck.md"}');export{t as data};

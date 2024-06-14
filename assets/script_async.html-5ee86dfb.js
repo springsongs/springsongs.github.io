@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2620e386","path":"/Html/tags/script_async.html","title":"script_async.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/script_async.md"}');export{t as data};

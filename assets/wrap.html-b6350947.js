@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d274725e","path":"/Html/attribute/wrap.html","title":"wrap.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/wrap.md"}');export{t as data};

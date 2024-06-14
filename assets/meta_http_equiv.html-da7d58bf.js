@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c878e72a","path":"/Html/tags/meta_http_equiv.html","title":"meta_http_equiv.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/meta_http_equiv.md"}');export{t as data};

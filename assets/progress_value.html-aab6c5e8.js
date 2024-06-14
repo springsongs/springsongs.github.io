@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6fea09cf","path":"/Html/tags/progress_value.html","title":"progress_value.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/progress_value.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-bfaf466a","path":"/Html/tutorial/favicon.html","title":"favicon.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/favicon.md"}');export{t as data};

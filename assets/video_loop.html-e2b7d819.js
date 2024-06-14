@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a0d1aa34","path":"/Html/tags/video_loop.html","title":"video_loop.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/video_loop.md"}');export{t as data};

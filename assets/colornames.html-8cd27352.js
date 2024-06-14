@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9aca6936","path":"/Html/reference/colornames.html","title":"HTML 颜色名称","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/reference/colornames.md"}');export{e as data};

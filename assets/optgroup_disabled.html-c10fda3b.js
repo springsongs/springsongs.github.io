@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7a0f61f5","path":"/Html/tags/optgroup_disabled.html","title":"optgroup_disabled.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/optgroup_disabled.md"}');export{t as data};

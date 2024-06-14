@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-063a43a0","path":"/Html/tags/select_size.html","title":"select_size.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/select_size.md"}');export{t as data};

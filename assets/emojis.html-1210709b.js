@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7ed16c74","path":"/Html/tutorial/emojis.html","title":"emojis.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/emojis.md"}');export{t as data};

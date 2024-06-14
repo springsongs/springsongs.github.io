@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-759ac046","path":"/Html/tags/link_hreflang.html","title":"link_hreflang.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/link_hreflang.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6e6a8f08","path":"/Html/attribute/optimum.html","title":"optimum.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/optimum.md"}');export{t as data};

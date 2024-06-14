@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-271f8389","path":"/Html/tutorial/quotation_elements.html","title":"quotation_elements.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/quotation_elements.md"}');export{t as data};

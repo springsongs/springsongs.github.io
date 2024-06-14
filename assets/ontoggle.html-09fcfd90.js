@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-070f41c8","path":"/Html/attribute/ontoggle.html","title":"ontoggle.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/ontoggle.md"}');export{t as data};

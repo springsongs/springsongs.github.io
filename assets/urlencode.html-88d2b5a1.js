@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-85c6d08c","path":"/Html/tutorial/urlencode.html","title":"urlencode.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/urlencode.md"}');export{t as data};

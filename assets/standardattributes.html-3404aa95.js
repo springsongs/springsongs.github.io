@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-480389b6","path":"/Html/reference/standardattributes.html","title":"HTML 全局属性","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/reference/standardattributes.md"}');export{t as data};

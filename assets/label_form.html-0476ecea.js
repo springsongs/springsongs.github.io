@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-bb47c002","path":"/Html/tags/label_form.html","title":"label_form.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/label_form.md"}');export{t as data};

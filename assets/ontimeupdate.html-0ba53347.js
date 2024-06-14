@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-46c1b1f4","path":"/Html/attribute/ontimeupdate.html","title":"ontimeupdate.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/ontimeupdate.md"}');export{t as data};

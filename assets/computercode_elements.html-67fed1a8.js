@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3441865e","path":"/Html/tutorial/computercode_elements.html","title":"computercode_elements.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/computercode_elements.md"}');export{e as data};

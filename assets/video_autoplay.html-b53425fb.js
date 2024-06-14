@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-48a65707","path":"/Html/tags/video_autoplay.html","title":"video_autoplay.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/video_autoplay.md"}');export{t as data};

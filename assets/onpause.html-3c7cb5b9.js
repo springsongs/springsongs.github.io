@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-ce23cf00","path":"/Html/attribute/onpause.html","title":"onpause.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onpause.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-246802ea","path":"/Html/tutorial/form_input_types.html","title":"form_input_types.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/form_input_types.md"}');export{t as data};

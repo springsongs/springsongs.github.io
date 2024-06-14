@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-ac15b5d0","path":"/Html/attribute/onkeypress.html","title":"onkeypress.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onkeypress.md"}');export{t as data};

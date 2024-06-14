@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6c81c17a","path":"/Html/attribute/scope.html","title":"scope.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/scope.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-1b1ba7a6","path":"/Html/tags/track_srclang.html","title":"track_srclang.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/track_srclang.md"}');export{t as data};

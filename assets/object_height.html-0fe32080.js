@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-665391fd","path":"/Html/tags/object_height.html","title":"object_height.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/object_height.md"}');export{t as data};

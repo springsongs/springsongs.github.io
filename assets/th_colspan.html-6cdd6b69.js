@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-578a272f","path":"/Html/tags/th_colspan.html","title":"th_colspan.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/th_colspan.md"}');export{t as data};

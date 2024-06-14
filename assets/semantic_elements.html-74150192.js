@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5cf7318f","path":"/Html/tutorial/semantic_elements.html","title":"semantic_elements.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/semantic_elements.md"}');export{t as data};

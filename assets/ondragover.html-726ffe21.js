@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-3f3a38d4","path":"/Html/attribute/ondragover.html","title":"ondragover.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/ondragover.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-37bfca6f","path":"/Html/tutorial/iframe.html","title":"iframe.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/iframe.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6099ebaa","path":"/Html/tags/meter_optimum.html","title":"meter_optimum.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/meter_optimum.md"}');export{t as data};

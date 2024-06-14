@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-03dc0bfa","path":"/Html/attribute/onpaste.html","title":"onpaste.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onpaste.md"}');export{t as data};

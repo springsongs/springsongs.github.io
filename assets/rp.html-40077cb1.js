@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-03cd6750","path":"/Html/tags/rp.html","title":"HTML <rp> 标签","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"示例","slug":"示例","link":"#示例","children":[]}],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/rp.md"}');export{t as data};

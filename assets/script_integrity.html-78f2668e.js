@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4caa44d5","path":"/Html/tags/script_integrity.html","title":"script_integrity.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/script_integrity.md"}');export{t as data};

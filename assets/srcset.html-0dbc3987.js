@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-771d4b1d","path":"/Html/attribute/srcset.html","title":"srcset.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/srcset.md"}');export{t as data};

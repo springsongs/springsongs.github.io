@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-73162bf6","path":"/Html/tags/select_disabled.html","title":"select_disabled.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/select_disabled.md"}');export{t as data};

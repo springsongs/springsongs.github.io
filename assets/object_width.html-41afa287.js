@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f9f3d8f0","path":"/Html/tags/object_width.html","title":"object_width.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/object_width.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-662530fd","path":"/Html/tags/textarea_readonly.html","title":"textarea_readonly.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/textarea_readonly.md"}');export{t as data};

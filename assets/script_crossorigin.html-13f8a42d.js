@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-49e92e1c","path":"/Html/tags/script_crossorigin.html","title":"script_crossorigin.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/script_crossorigin.md"}');export{t as data};

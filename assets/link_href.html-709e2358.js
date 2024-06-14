@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f6545a18","path":"/Html/tags/link_href.html","title":"link_href.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/link_href.md"}');export{t as data};

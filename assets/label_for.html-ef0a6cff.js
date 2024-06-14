@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-a16a39f4","path":"/Html/tags/label_for.html","title":"label_for.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/label_for.md"}');export{t as data};

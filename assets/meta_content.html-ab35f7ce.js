@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-cb7078a2","path":"/Html/tags/meta_content.html","title":"meta_content.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/meta_content.md"}');export{t as data};

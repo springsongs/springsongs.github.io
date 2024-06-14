@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-d2f4c8aa","path":"/Html/tags/","title":"HTML 标签参考手册","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/README.md"}');export{t as data};

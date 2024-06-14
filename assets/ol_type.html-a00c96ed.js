@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f10a9db0","path":"/Html/tags/ol_type.html","title":"ol_type.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/ol_type.md"}');export{t as data};

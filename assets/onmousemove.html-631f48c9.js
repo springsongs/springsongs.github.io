@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-44a92c00","path":"/Html/attribute/onmousemove.html","title":"onmousemove.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onmousemove.md"}');export{t as data};

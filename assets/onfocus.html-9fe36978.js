@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5da8e6de","path":"/Html/attribute/onfocus.html","title":"onfocus.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/onfocus.md"}');export{t as data};

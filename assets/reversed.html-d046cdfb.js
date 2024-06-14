@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-147a314e","path":"/Html/attribute/reversed.html","title":"reversed.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/reversed.md"}');export{e as data};

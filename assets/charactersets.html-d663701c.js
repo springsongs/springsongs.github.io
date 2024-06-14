@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6dab5f4e","path":"/Html/reference/charactersets.html","title":"HTML 字符集","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/reference/charactersets.md"}');export{e as data};

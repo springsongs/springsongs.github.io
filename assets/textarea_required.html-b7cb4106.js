@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7d1995c0","path":"/Html/tags/textarea_required.html","title":"textarea_required.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/textarea_required.md"}');export{t as data};

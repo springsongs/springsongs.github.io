@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c3b088c4","path":"/Html/attribute/tabindex.html","title":"tabindex.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/tabindex.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-70e910c8","path":"/Html/tags/select_autofocus.html","title":"select_autofocus.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/select_autofocus.md"}');export{t as data};

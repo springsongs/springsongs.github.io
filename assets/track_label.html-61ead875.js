@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-7401d0f8","path":"/Html/tags/track_label.html","title":"track_label.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/track_label.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-6f096c50","path":"/Html/tags/script_defer.html","title":"script_defer.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tags/script_defer.md"}');export{t as data};

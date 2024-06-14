@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-c6b5fa4e","path":"/Html/attribute/readonly.html","title":"readonly.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/readonly.md"}');export{t as data};

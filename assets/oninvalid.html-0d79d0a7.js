@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-16e5bc42","path":"/Html/attribute/oninvalid.html","title":"oninvalid.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/attribute/oninvalid.md"}');export{t as data};

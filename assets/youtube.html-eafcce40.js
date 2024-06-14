@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-5049451c","path":"/Html/tutorial/youtube.html","title":"youtube.md","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":null,"contributors":[]},"filePathRelative":"Html/tutorial/youtube.md"}');export{t as data};
